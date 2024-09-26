@@ -25,7 +25,7 @@ from rest_framework.mixins import (ListModelMixin, RetrieveModelMixin,
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenVerifyView
 from user_authentication.models import UserDetails, User
 from user_authentication.serializers import (
-    LoginSerializer,UserDetailsSerializer, UserTokenVerifySerializer,  SignUpSerializer,  UserUpdateSerializer)
+    LoginSerializer, UserTokenVerifySerializer,  SignUpSerializer)
 from django.conf import settings
 from .utils import serializer_error_format
 

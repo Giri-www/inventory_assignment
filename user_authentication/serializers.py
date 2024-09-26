@@ -134,13 +134,3 @@ class SignUpSerializer(serializers.Serializer):
 
         return data
 
-class UserUpdateSerializer(serializers.Serializer):
-    ''' User Update Serializer'''
-    email = serializers.EmailField(
-        max_length=150, allow_blank=False)
-    first_name = serializers.CharField(
-        max_length=150, allow_blank=False)
-    last_name = serializers.CharField(
-        max_length=150, allow_blank=False)
-    phone = serializers.CharField(
-        max_length=150, min_length=8, allow_blank=False)
