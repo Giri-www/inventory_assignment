@@ -20,6 +20,7 @@ This project is a simple Inventory Management System backend built using Django 
        cd inventory_proj
 
 2. **Create Virtual enviroment using below commands**
+    ```bash
     *Windows*
     >> python -m venv venv
     >> venv\Scripts\activate
@@ -28,13 +29,16 @@ This project is a simple Inventory Management System backend built using Django 
     >> source venv/bin/activate
 
 3. **Install the required dependencies**
+    ```bash
     >> pip install -r requirements.txt
 
 4. **Migrations & Migrate**
+    ```bash
     >> python manage.py makemigrations
     >> python manage.py migrate
 
 5. **Run your Docker Compose**
+    ```bash
     >> docker-compose up -d 
     >> docker-compose up --build 
 
