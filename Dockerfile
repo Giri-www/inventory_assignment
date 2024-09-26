@@ -1,7 +1,7 @@
 FROM python
 
 RUN apt update
-# RUN apt install -y python3-dev default-libmysqlclient-dev libreoffice
+
 
 ARG PROJECT=inventory_proj
 ARG PROJECT_DIR=/home/ubuntu/inventory_proj/
