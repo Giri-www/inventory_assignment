@@ -10,4 +10,44 @@ This project is a simple Inventory Management System backend built using Django 
 
 ## Project Structure
 
-inventory_proj/ │ ├── Dockerfile ├── docker-compose.yml ├── inventory/ │ ├── migrations/ │ ├── init.py │ ├── admin.py │ ├── apps.py │ ├── models.py │ ├── serializers.py │ ├── tests.py │ ├── urls.py │ ├── views.py │ ├── manage.py ├── requirements.txt ├── README.md └── .env
+## Setting Up the Project
+
+### Option 1: Running Locally with a Virtual Environment
+    
+1. **Clone the repository**
+    ```bash
+       git clone https://github.com/Giri-www/inventory_assignment.git
+       cd inventory_proj
+
+2. **Create Virtual enviroment using below commands**
+    *Windows*
+    >> python -m venv venv
+    >> venv\Scripts\activate
+    *Linux*
+    >> python3 -m venv venv
+    >> source venv/bin/activate
+
+3. **Install the required dependencies**
+    >> pip install -r requirements.txt
+
+4. **Migrations & Migrate**
+    >> python manage.py makemigrations
+    >> python manage.py migrate
+
+5. **Run your Docker Compose**
+    >> docker-compose up -d 
+    >> docker-compose up --build 
+
+ RUN YOUR SERVER
+6. **From Project Import the request Postman json in your Postman**
+    >> using sign in you can create the user
+
+
+
+
+### Key Changes:
+1. Updated `DATABASES` settings in `settings.py` to use `django.db.backends.mysql`.
+2. Adjusted setting.py file to include MySQL settings.
+3. Updated `docker-compose.yml` to use MySQL as the database service.
+
+Let me know if you need any more changes or further customization!
