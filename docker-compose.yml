@@ -1,0 +1,23 @@
+##########  docker compose file #########
+
+## python version ##
+version: '3.8'
+
+## redis services ##
+services:
+  redis:
+    image: redis:latest
+    container_name: redis1
+    ports:
+      - "6379:6379"
+
+  django:
+    image: django:latest
+    container_name: django
+    command: python /app/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis

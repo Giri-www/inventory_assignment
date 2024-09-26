@@ -1,0 +1,6 @@
+2024-09-26 20:06:53,038 inventory.views INFO     Deleting item with ID 13
+2024-09-26 20:06:53,054 inventory.views INFO     Item with ID 13 deleted successfully.
+2024-09-26 20:07:09,159 inventory.views INFO     Deleting item with ID 13
+2024-09-26 20:07:09,162 inventory.views ERROR    Item with ID 13 not found.
+2024-09-26 20:07:28,519 inventory.views INFO     Deleting item with ID 12
+2024-09-26 20:07:28,528 inventory.views INFO     Item with ID 12 deleted successfully.
